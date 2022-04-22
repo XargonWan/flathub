@@ -17,13 +17,15 @@ jobs:
   steps:
    - name: Preparing the PR
      run: |
+      git clone --branch=RetroDECK --recursive https://github.com/XargonWan/flathub.git
       git clone --recursive https://github.com/XargonWan/RetroDECK.git
       cd RetroDECK
       git submodule init
       git submodule update
       cd ..
-      mv -f ./RetroDECK/* .
+      mv -f RetroDECK/* flathub/
       rm -rf RetroDECK
+      cd flathub
       git submodule init
       git submodule update
       git add *
