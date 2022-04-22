@@ -31,3 +31,4 @@ jobs:
       git add *
       git commit -m "Updating flathub"
       git push origin RetroDECK
+     token: ${{ secrets.TRIGGER_BUILD_TOKEN }}
