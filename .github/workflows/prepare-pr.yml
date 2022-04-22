@@ -5,20 +5,20 @@ on:
 
 jobs:
  updating_from_main:
- runs-on: ubuntu-latest
-        
- steps:
-  - name: Preparing the PR
-    run: |
-     git clone --recursive https://github.com/XargonWan/RetroDECK.git
-     cd RetroDECK
-     git submodule init
-     git submodule update
-     cd ..
-     mv -rf ./RetroDECK/* .
-     rm -rf RetroDECK
-     git submodule init
-     git submodule update
-     git add *
-     git commit -m "Updating flathub"
-     git push origin RetroDECK
+  runs-on: ubuntu-latest
+         
+  steps:
+   - name: Preparing the PR
+     run: |
+      git clone --recursive https://github.com/XargonWan/RetroDECK.git
+      cd RetroDECK
+      git submodule init
+      git submodule update
+      cd ..
+      mv -rf ./RetroDECK/* .
+      rm -rf RetroDECK
+      git submodule init
+      git submodule update
+      git add *
+      git commit -m "Updating flathub"
+      git push origin RetroDECK
