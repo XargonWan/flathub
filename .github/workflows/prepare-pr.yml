@@ -1,4 +1,4 @@
-name: Cooker
+name: Prepare-PR
 
 on:
  workflow_dispatch:
