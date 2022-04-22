@@ -22,7 +22,7 @@ jobs:
       git submodule init
       git submodule update
       cd ..
-      mv -rf ./RetroDECK/* .
+      mv -f ./RetroDECK/* .
       rm -rf RetroDECK
       git submodule init
       git submodule update
